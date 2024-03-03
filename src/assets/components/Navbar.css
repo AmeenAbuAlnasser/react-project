@@ -1,0 +1,56 @@
+:root{
+    --dark-color:#19283f;
+    --green-color:#33d1cc;
+    --main-btn:#ff3150;
+    --yellow-color:#ffc400;
+    --section-color:#eff7fa;
+
+}
+body{
+    font-family: "Roboto", sans-serif;
+   
+}
+/* start navbar */
+.navbar{
+    background-color: var(--dark-color);
+}
+.navbar .nav-item .nav-link{
+    color: white;
+}
+.navbar .nav-item .nav-link:focus,
+.navbar .nav-item .nav-link:hover,
+.navbar .nav-item .nav-link.active
+{
+    color: var(--green-color);
+}
+.search{
+    color: var(--green-color);
+    border-left: 1px solid var(--green-color);
+}
+.navbar .navbar-toggler{
+    color: white;
+    border-color: white;
+    font-size: 35px;
+}
+.navbar .navbar-toggler:focus{
+    box-shadow: none
+}
+.navbar .navbar-toggler[aria-expanded="true"]{
+    border-color: var(--green-color);
+}
+.navbar .main-btn{
+    background-color: var(--main-btn);
+    color: var(--yellow-color);
+}
+.navbar .main-btn:hover{
+    background-color: var(--main-btn);
+    color:white;
+}
+
+.custom-toggler .navbar-toggler-icon {
+    color: white !important; /* Change icon color to white */
+  }
+
+  .swiper img{
+width: 35%;
+  }
