@@ -13,6 +13,7 @@ import "swiper/css";
 import "swiper/css/effect-coverflow";
 import "swiper/css/pagination";
 import "./Home.css";
+import { Link } from "react-router-dom";
 function Home() {
   const [categorys, setCategory] = useState([]);
   const [loder, setLoder] = useState(true);
@@ -60,7 +61,9 @@ function Home() {
           >
             {categorys.map((category) => (
               <SwiperSlide key={category.id}>
-                <img src={category.image.secure_url} />
+                <Link to={`/products/${category.id}`}>
+                  <img src={category.image.secure_url} alt={category.name} />
+                </Link>
               </SwiperSlide>
             ))}
           </Swiper>

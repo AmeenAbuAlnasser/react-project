@@ -28,7 +28,7 @@ function App() {
           element:<Signup />,
         },
         {
-          path:"/products",
+          path:"/products/:id",
           element:<Products/>,
         },
       ]
