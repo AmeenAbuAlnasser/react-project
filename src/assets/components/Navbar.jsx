@@ -34,8 +34,8 @@ function Navbar() {
             <div className="search ps-3 pe-3 d-none d-lg-block">
               <i className="fa-solid fa-magnifying-glass" />
             </div>
-            <div className="btn main-btn rounded-pill px-4 mx-2">login</div>
-            <div className="btn main-btn rounded-pill px-4">Sign in</div>
+            <Link className="btn main-btn rounded-pill px-4 mx-2" to="/login">login</Link>
+            <Link className="btn main-btn rounded-pill px-4" to="/signup">Sign Up</Link>
           </div>
         </div>
       </nav>
